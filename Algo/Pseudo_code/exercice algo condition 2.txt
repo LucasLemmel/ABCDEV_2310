@@ -1,0 +1,17 @@
+VARIABLE
+    nombre1 est un entier
+    nombre2 est un entier
+début du programme 
+    ecrire "saisir le nombre1"
+    lire nombre1
+    ecrire "saisir le nombre2"
+    lire nombre2
+    si nombre1 < 0 ET nombre2 < 0 OU nombre1 > 0 ET nombre2 > 0
+    alors 
+	ecrire "ce nombre est positif"
+    sinon
+        si nombre1 > 0 et nombre2 < 0 OU  nombre1 < 0 et nombre2 > 0
+    	alors 
+            ecrire "ce nombre est négatif"
+    	
+fin du programe

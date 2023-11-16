@@ -1,0 +1,15 @@
+VARIABLE
+    nombreN est un entier
+début du programme 
+    ecrire "saisir le nombreN"
+    lire nombre
+    si nombreN < 0
+    alors
+        ecrire "ce nombre est négatif"
+    sinon
+        si nombreN > 0
+        alors
+           ecrire "ce nombre est positif"
+        sinon
+           ecrire "ce nombre est zéro"
+fin du programe

@@ -1,0 +1,13 @@
+Variables
+	anneeA est un entier
+Début du programme
+	Ecrire "saisir une année"
+	Lire anneeA 
+	Si anneeA mod 4 = 0 ET anneeA mod 100 != 0 OU anneeA mod 400 = 0
+	alors 
+		afficher anneeA
+		Ecrire "Cette année est bissextile"
+	sinon
+		afficher anneeA
+		Ecrire "Cette année est non bissextile"
+Fin du programme

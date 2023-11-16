@@ -1,0 +1,26 @@
+VARIBLE
+    age est un entier
+
+DEBUT DU PROGAMME
+    ecrire"saisir age" 
+    lire age
+    Si age >= 6 ET age <= 7
+    alors
+       afficher age
+       ecrire "cet enfant est un Poussin"
+    sinon
+       si age >= 8 ET age <= 9
+       alors
+          afficher age
+          ecrire "cet enfant est une pupille"
+       sinon
+          si age >= 10 ET age <= 11
+       alors
+          afficher age
+          ecrire "cet enfant est un minime"
+          sinon
+             si age >= 12
+             alors
+                afficher age
+                ecrire "cet enfant est un cadet"
+FIN DU PROGRAMME

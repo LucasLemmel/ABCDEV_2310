@@ -6,12 +6,12 @@ début du programme
     lire nombre1
     ecrire "saisir le nombre2"
     lire nombre2
-    si nombre1 < 0 ET nombre2 < 0 OU nombre1 > 0 ET nombre2 > 0
+    si (nombre1 < 0 ET nombre2 < 0) OU (nombre1 > 0 ET nombre2 > 0)
     alors 
-	ecrire "ce nombre est positif"
+	ecrire "le produit des 2 nombre est positif"
     sinon
-        si nombre1 > 0 et nombre2 < 0 OU  nombre1 < 0 et nombre2 > 0
+        si (nombre1 > 0 et nombre2 < 0) OU  (nombre1 < 0 et nombre2 > 0)
     	alors 
-            ecrire "ce nombre est négatif"
+            ecrire "le produit des 2 nombre est négatif"
     	
 fin du programe

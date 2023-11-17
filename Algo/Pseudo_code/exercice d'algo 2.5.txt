@@ -1,0 +1,14 @@
+Variable
+	nombreN est un entier
+	i est un entier
+Début du programme
+	ecrire "saisir un nombre entier"
+	lire nombreN
+	Debut Pour
+		Pour i allant de 2 à nombreN -1
+		Debut Si
+			Si nombreN mod i = 0
+			Alors
+			ecrire ,nombreN "est divisible par",i
+		Fin Si
+Fin du programme

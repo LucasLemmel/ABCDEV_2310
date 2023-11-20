@@ -1,0 +1,12 @@
+Variable
+	nb est un entier
+Début du programme
+	ecrire "saisir un nombre"
+	lire nb
+	Debut Tant que
+		Tant que (nb < 1 OU nb >3)
+		faire
+			ecrire "saisir un autre nombre"
+			lire nombre
+	Fin Tant que
+Fin du programme

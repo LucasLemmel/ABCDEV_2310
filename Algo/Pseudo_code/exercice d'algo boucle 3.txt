@@ -1,0 +1,2 @@
+Variable
+	nb est un entier

@@ -1,12 +1,15 @@
 Variable
 	nb est un entier
+	nbr est un entier
 Début du programme
 	ecrire "saisir un nombre"
 	lire nb
+	nbr <-- 0
 	Debut Tant que
-		Tant que (nb < 1 OU nb >3)
+		Tant que (nbr < 10)
 		faire
-			ecrire "saisir un nombre plus grand"
-			lire nb
+			nb <-- nb + 1
+			afficher nb
+			nbr <-- nbr + 1
 	Fin Tant que
 Fin du programme

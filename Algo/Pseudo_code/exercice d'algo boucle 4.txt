@@ -1,0 +1,15 @@
+Variable
+	nb est un entier
+	somme est un entier
+	i est un entier
+Début du programme
+	ecrire "saisir un nombre"
+	lire nb
+	somme <-- 0
+ 	debut pour
+	POUR i Allant de 1 à nb
+		 somme <-- somme + i
+ 	FIN_POUR
+ 	ecrire"La somme est :"
+ 	Afficer somme
+Fin du programme

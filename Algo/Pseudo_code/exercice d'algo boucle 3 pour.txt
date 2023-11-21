@@ -1,0 +1,11 @@
+Variable
+	nb est un entier
+	nbr est un entier
+Début du programme
+	ecrire "saisir un nombre"
+	lire nb
+	Debut Pour
+		Pour nbr allant de nb + 1 à nombreN nb + 10
+		Afficher nbr
+	Fin Pour
+Fin du programme

@@ -4,9 +4,13 @@ Début du programme
 	ecrire "saisir un nombre"
 	lire nb
 	Debut Tant que
-		Tant que (nb < 1 OU nb >3)
+		Tant que (nb < 10 OU nb > 20)
 		faire
+			Si (nb < 10)
 			ecrire "saisir un nombre plus grand"
 			lire nb
+			sinon si (nb>20)
+				ecrire "saisir un nombre plus petit"
+				lire nb
 	Fin Tant que
 Fin du programme

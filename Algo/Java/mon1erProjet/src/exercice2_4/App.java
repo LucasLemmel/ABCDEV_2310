@@ -15,10 +15,10 @@ public class App {
 				Si annee mod 4 = 0 ET annee mod 100 != 0 OU annee mod 400 = 0
 				alors 
 					afficher annee
-					Ecrire "Cette année est bissextile"
+					Ecrire "l'année ",annee" est bissextile"
 				sinon
 					afficher annee
-					Ecrire "Cette année est non bissextile"
+					Ecrire "l'année ",annee" n'est pas bissextile"
 Fin du programme
 		 */
 		
@@ -30,10 +30,10 @@ Fin du programme
 		annee = sc.nextInt();
 		
 		if(annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0) {
-			System.out.println(annee +" cette année est bisssextile");
+			System.out.println("l'année "+ annee +" est bisssextile");
 		}
 		else {
-			System.out.println(annee +" cette année est non bisssextile");
+			System.out.println( "l'année "+ annee +" n'est pas bisssextile");
 		}
 		
 		

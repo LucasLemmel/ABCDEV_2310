@@ -28,9 +28,9 @@ public class App {
 		 */
 		
 		
-		int a;
-		int b;
-		int c;
+		int a,b,c;
+		
+		
 		
 		
 		Scanner sc = new Scanner(System.in);
@@ -41,16 +41,16 @@ public class App {
 		System.out.println("saisir la valeur de b");
 		b = sc.nextInt();
 		
+		System.out.println("avant inversion ");
 		System.out.println("la valeur de a est: "+a);
-		
 		System.out.println("la valeur de b est: "+b);
 		
 		c = a;
 		a = b;
 		b = c;
 		
+		System.out.println("après inversion ");
 		System.out.println("la valeur de a est: "+a);
-		
 		System.out.println("la valeur de b est: "+b);
 		
 		sc.close();

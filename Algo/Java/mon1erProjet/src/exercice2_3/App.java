@@ -9,9 +9,9 @@ public class App {
 		
 		/*
 		 * VARIABLE
-    			a est un ENTIER
-    			b est un ENTIER
-    			c est un ENTIER
+    			a est un réel
+    			b est un réel
+    			c est un réel
 		   DEBUT DU PROGRAMME
     			ecrire "saisir a"
     			lire a
@@ -43,42 +43,42 @@ public class App {
                       
 		 */
 
-		int a;
-		int b;
-		int c;
+		double a;
+		double b;
+		double c;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("saisir a");
-		a = sc.nextInt();
+		a = sc.nextDouble();
 		System.out.println("saisir b");
-		b = sc.nextInt();
+		b = sc.nextDouble();
 		System.out.println("saisir c");
-		c = sc.nextInt();
+		c = sc.nextDouble();
 		
 		if(a <= b && a <= c) {
 			if(b <= c) {
-				System.out.println(a +" <= "+ b +" <= "+ c);
+				System.out.println(a +" "+ b +" "+ c);
 				}
 			
 			else {
-			   System.out.println(a +" <= "+ c +" <= "+ b);
+			   System.out.println(a +" "+ c +" "+ b);
 			    }
 		}
 		else if(b <= a && b <= c) {
 				if(a <= c) {
-					System.out.println(b +" <= "+ a +" <= "+ c);
+					System.out.println(b +" "+ a +" "+ c);
 				}
 				else {
-					System.out.println(b +" <= "+ c +" <= "+ a);
+					System.out.println(b +" "+ c +" "+ a);
 				}
 		}
-		     else if(c <= a && c <= b) {
+		     else  {
 		    	 	if(a <= b) {
-		    	 		System.out.println(c +" <= "+ a +" <= "+ b);
+		    	 		System.out.println(c +" "+ a +" "+ b);
 		    	 	}
 		    	 	else {
-		    	 		System.out.println(c +" <= "+ b +" <= "+ a);
+		    	 		System.out.println(c +" "+ b +" "+ a);
 		    	 	}
 		     }
 		

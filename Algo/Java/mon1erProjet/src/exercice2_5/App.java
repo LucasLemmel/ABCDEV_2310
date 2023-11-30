@@ -34,9 +34,9 @@ public class App {
 		System.out.println("saisir le nombreN");
 		nombreN = sc.nextInt();
 		
-		for(i = 2;i <= nombreN - 1;i++) {
+		for(i = 2;i < nombreN;i++) {
 			if(nombreN % i == 0) {
-				System.out.println(nombreN +"est divisible par"+ i);
+				System.out.println(nombreN +" est divisible par"+ i);
 			}
 			sc.close();
 		}

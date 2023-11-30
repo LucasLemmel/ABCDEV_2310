@@ -16,9 +16,9 @@ public class App {
  		Lire b
  		Debut Si
  				Si (a < b) Alors
- 					Afficher ,a < ,b
+ 					Afficher ,a" < ",b
  				Sinon
- 				 	Afficher ,b < ,a
+ 				 	Afficher ,b" < ",a
  		Fin Si
  	  Fin du programme
 	 */
@@ -35,10 +35,10 @@ public class App {
 		System.out.println("saisir la valeur de b");
 		b = sc.nextInt();
 		
-		if(a < b) {
+		if(a <= b) {
 			System.out.println(a+" < "+b);
 		}
-		else if(b < a) {
+		else if(b <= a) {
 			System.out.println(b+" < "+a);
 		}
 		

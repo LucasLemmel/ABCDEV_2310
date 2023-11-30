@@ -10,25 +10,26 @@ public class App {
 		 * Variable
 		 * rayon est un entier
 		 * angle est un entier
-		 * airesecteurcirculaire est un réel
+		 * aire est un réel
 		 * Début du programme
 		 * 		ecrire "saisir le rayon"
 		 * 		lire rayon
 		 * 		ecrire "saisir l'angle"
 		 * 		lire angle
-		 * 		airesecteurcirculaire <-- (Math.PI*pow(rayon,2)*angle)/360
-		 * 		ecrire "l'aire du secteur circulaire est :",airesecteurcirculaire
+		 * 		aire <-- (PI*rayon^2*angle)/360
+		 * 		ecrire "l'aire du secteur circulaire est :",aire
 		 *		
 		 * Fin du programme
 		 * 
 		 */
 		
 		
-		
+				//Variable
 				int rayon;
 				int angle;
-				double airesecteurcirculaire;
-				
+				double aire;
+				//constante
+				final double pi = Math.PI;
 				Scanner sc = new Scanner(System.in);
 				
 				
@@ -38,9 +39,11 @@ public class App {
 				System.out.println("saisir l'angle");
 				angle = sc.nextInt();
 		
-				airesecteurcirculaire = ((Math.PI*Math.pow(rayon,2 )*angle)/360);
+				aire = (pi * Math.pow(rayon,2 ) * angle) / 360;
 				
-				System.out.println("l'aire du secteur circulaire est :"+airesecteurcirculaire);
+				aire = Math.round(aire*1000.00)/1000.00;
+				
+				System.out.println("l'aire du secteur circulaire est :"+aire);
 				
 				sc.close();
 				

@@ -1,10 +1,11 @@
-package exercicecondition4;
+package exercicecondition4_2;
 
 import java.util.Scanner;
 
 public class App {
 
 	public static void main(String[] args) {
+		
 		
 		
 		/*
@@ -35,7 +36,7 @@ public class App {
 		
 		int heures;
 		int minutes;
-		
+		int secondes;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Saisir les heures");
@@ -44,8 +45,15 @@ public class App {
 		System.out.println("Saisir les minutes");
 		minutes = sc.nextInt();
 		
-		minutes = minutes + 1;
+		System.out.println("Saisir les secondes");
+		secondes = sc.nextInt();
 		
+		secondes = secondes + 1;
+		
+		if(secondes == 60) {
+			secondes = 0;
+			minutes = minutes + 1;
+		}
 		if(minutes == 60) {
 			minutes = 0;
 			heures = heures + 1;
@@ -54,7 +62,7 @@ public class App {
 			heures = 0;
 		}
 		
-		System.out.println("Dans une minute il sera "+ heures +" heure(s) "+ minutes +" minute(s)");
+		System.out.println("Dans une minute il sera "+ heures +" heure(s) "+ minutes +" minute(s) "+ secondes +" seconde(s)");
 		
 		sc.close();
 		
@@ -64,8 +72,7 @@ public class App {
 		
 		
 		
-		
-		
+	
 
 	}
 

@@ -46,10 +46,10 @@ public class App {
 		annees = sc.nextInt();
 		
 		interet_simple = somme*(1+annees*interet/100);
-		System.out.println("l'nteret simple est:"+interet_simple);
+		System.out.println("la valeur acquise avec un interet simple est:"+interet_simple);
 		
-		interet_composer =  somme*Math.pow((1+interet/100),annees);
-		System.out.println("l'nteret composer est:"+interet_composer);
+		interet_composer =  somme*Math.pow(1+interet/100,annees);
+		System.out.println("la valeur acquise avec un interet composer est:"+interet_composer);
 		
 		sc.close();
 		

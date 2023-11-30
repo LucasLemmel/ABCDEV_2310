@@ -25,18 +25,30 @@ public class App {
 		
 		int nombreN;
 		int i;
-		
+		int compteur;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("saisir un nombre");
 		nombreN = sc.nextInt();
+		compteur = 0;
 		
-		for(i = 1;i == nombreN - 1;i++ ) {
+		for(i = 2;i < nombreN;i++ ) {
 			if(nombreN % i == 0) {
-				System.out.println(nombreN + " est que divisible par "+ i + " et par "+ nombreN);
+				compteur = compteur + 1;
+				
 			}
+		}	
+			if(compteur == 0) {
+				System.out.println("le nombre "+ nombreN +" est premier");
+			}
+			else {
+				System.out.println("le nombre "+ nombreN +" n'est pas premier");
+			}
+			
+			
+			
 			sc.close();
-		}
+		
 		
 		
 		

@@ -39,7 +39,7 @@ public class App {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Saisir le genre (M/F :");
+		System.out.println("Saisir le genre (M/F) :");
 		genre = sc.next();
 		
 		System.out.println("Saisir l'age :");
@@ -48,12 +48,13 @@ public class App {
 		condition1 = genre.equals("M")  && (age > 20);
 		condition2 = genre.equals("F") && (age > 18 && age < 35);
 		
-		if((condition1 = true ) || (condition2 = true)) {
+		if(condition1  || condition2) {
 			System.out.println("Imposable");
 		}
 		else {
 			System.out.println("Non Imposable");
 		}
+		
 		sc.close();
 		
 		

@@ -23,18 +23,20 @@ public class App {
 		 */
 		
 		
-		int nb;
+		int nb=0;
 		
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Saisir un nombre entre 1 et 3");
-		nb = sc.nextInt();
 		
 		while(nb < 1 || nb > 3) {
 			System.out.println("Saisir un nombre entre 1 et 3");
 			nb = sc.nextInt();
+			if(nb >=1 && nb <= 3) {
+			System.out.println("Le nombre convien");
+			}
+			else {
+			System.out.println("Le nombre ne convien pas");
+			}
 		}
-		
 		sc.close();
 		
 		

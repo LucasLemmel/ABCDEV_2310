@@ -32,10 +32,10 @@ public class App {
 		System.out.println("Saisir un nombre");
 		nb = sc.nextInt();
 		
-		for(i = 0; i < 10;i++) {
+		for(i = 1; i <= 10;i++) {
 			
-			nb += 1;
-			System.out.println(nb);
+			nb = nb + 1;
+			System.out.print(nb+" ");
 			
 		}
 		sc.close();

@@ -29,20 +29,18 @@ public class App {
 		
 		int nombre;
 		int factorielle =1;
-		int i;
+		
 		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Saisir un nombre");
 		nombre = sc.nextInt();
 		
-		for(i=2;i <= nombre;i++) {
+		for(int i=2;i <= nombre;i++) {
 			factorielle = factorielle * i;
 		}
 		
 		System.out.println("la factorielle de "+ nombre +" est : "+ factorielle);
-		
-		
 		
 		sc.close();
 		

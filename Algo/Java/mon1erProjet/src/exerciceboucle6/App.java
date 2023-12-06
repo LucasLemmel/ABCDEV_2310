@@ -39,7 +39,7 @@ public class App {
 		while(i != 20) {
 			System.out.println("Saisir un nombre");
 			nombre = sc.nextInt();
-			i = i + 1;
+			i++;
 			
 			if(nvnombre < nombre) {
 				

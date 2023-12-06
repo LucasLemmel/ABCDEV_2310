@@ -32,14 +32,14 @@ public class App {
 		
 		
 		
-		String genre = "M/F";
+		String genre;
 		int age;
 		boolean condition1;
 		boolean condition2;
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Saisir le genre (M/F) :");
+		System.out.println("Saisir le genre M/F:");
 		genre = sc.next();
 		
 		System.out.println("Saisir l'age :");

@@ -28,17 +28,17 @@ public class App {
 		
 		
 		int nb;
-		int nbr = 0;
+		int i = 1;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Saisir un nombre");
 		nb = sc.nextInt();
 		
-		while(nbr < 10) {
+		while(i <= 10) {
 			nb = nb + 1;
-			System.out.println(nb);
-			nbr = nbr + 1;
+			System.out.print(nb+" ");
+			i++;
 		}
 		
 		sc.close();

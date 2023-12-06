@@ -20,23 +20,23 @@ public class App {
  				debut pour
 						POUR i Allant de 1 à nb
 		 				somme <-- somme + i
- 						FIN_POUR
- 						ecrire"La somme est :"
- 						Afficer somme
+		 				i suivant
+ 				FIN_POUR
+ 						ecrire"La somme est :",somme
 			Fin du programme
 		 */
 		
 		int nb;
 		int somme;
-		int i;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Saisir un nombre");
 		nb = sc.nextInt();
+		
 		somme = 0;
 		
-		for(i=1;i <= nb;i++) {
+		for(int i=1;i <= nb;i++) {
 			somme = somme + i;
 			
 		}

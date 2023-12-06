@@ -26,21 +26,23 @@ public class App {
 			Fin du programme
 		 */
 		
-		int nb;
+		int nb=0;
 		
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Saisir un nombre");
-		nb = sc.nextInt();
+	
 		
 		while(nb < 10 || nb > 20) {
+			System.out.println("Saisir un nombre entre 10 et 20");
+			nb = sc.nextInt();
 			if(nb < 10) {
-				System.out.println("Saisir un nombre plus grand");
-				nb = sc.nextInt();
+				System.out.println("plus grand");
 			}
 			else if(nb >20) {
-				System.out.println("Saisir un nombre plus petit");
-				nb = sc.nextInt();
+				System.out.println("plus petit");
+			}
+			else {
+				System.out.println("nombre valide");
+
 			}
 				
 				

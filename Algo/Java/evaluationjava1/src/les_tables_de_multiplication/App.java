@@ -62,7 +62,7 @@ public class App {
 		while(i!=11) {
 			System.out.println("Saisir un nombre entre 1 et 10:");
 			nombre = sc.nextInt();
-		for(i = 0; i <= 10;i++) {
+		for(i = 0; i <= 20;i++) {
 		resultat = i * nombre;
 		System.out.println(i +" * "+ nombre +" = "+resultat);
 			

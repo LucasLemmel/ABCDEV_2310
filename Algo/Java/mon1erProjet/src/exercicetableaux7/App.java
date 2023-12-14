@@ -1,4 +1,4 @@
-package exercicetableaux3;
+package exercicetableaux7;
 
 import java.util.Scanner;
 
@@ -9,8 +9,8 @@ public class App {
 		
 		Scanner sc = new Scanner(System.in);
 		int i;
-		int nbpositif = 0;
-		int nbnegatif = 0;
+		
+		
 		System.out.println("saisir le nombre de valeur à saisir");
 		i = sc.nextInt();
 		
@@ -20,20 +20,19 @@ public class App {
 		for(i = 0; i <= tableau.length-1;i++) {
 			System.out.println("saisir la valeur a ajouter dans le tableau");
 			tableau[i] = sc.nextInt();
-			
-			if(tableau[i] >= 0) {
-				nbpositif = nbpositif + 1;
-				
-			}
-			else {
-				nbnegatif = nbnegatif + 1;
-			}
-			
-			
+			tableau[i] = tableau[i]+1;
+		}	
+		
+		for(int j = 0;j <= tableau.length-1;j++ ){
+			System.out.print(tableau[j]+" ");
 		}
 		
-		System.out.println("il y a "+ nbpositif +" valeurs positif et "+ nbnegatif +" valeurs negatif");
 		sc.close();
+		
+		
+		
+		
+		
 		
 		
 		

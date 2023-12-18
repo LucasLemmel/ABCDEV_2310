@@ -21,6 +21,7 @@ public class App {
 			System.out.println("saisir la valeur a ajouter dans le tableau");
 			tableau[i] = sc.nextInt();
 			tableau[i] = tableau[i]+1;
+			
 		}	
 		
 		for(int j = 0;j <= tableau.length-1;j++ ){

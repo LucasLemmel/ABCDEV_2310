@@ -3,7 +3,7 @@ package exercice2_4;
 import java.util.Scanner;
 
 public class App {
-
+	
 	public static void main(String[] args) {
 		
 		/*
@@ -30,10 +30,10 @@ Fin du programme
 		annee = sc.nextInt();
 		
 		if(annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0) {
-			System.out.println("l'année "+ annee +" est bisssextile");
+			System.out.println("l'année "+ annee +" est bissextile");
 		}
 		else {
-			System.out.println( "l'année "+ annee +" n'est pas bisssextile");
+			System.out.println( "l'année "+ annee +" n'est pas bissextile");
 		}
 		
 		

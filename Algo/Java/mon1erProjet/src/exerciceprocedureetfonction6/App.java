@@ -1,55 +1,30 @@
 package exerciceprocedureetfonction6;
 
-public class App {
-	public static void inversion(String[] tableau) {
+import java.util.Scanner;
 
-		
-		tableau[5] = tableau[0];
-		tableau[0] = tableau[4];
-		tableau[4] = tableau[1];
-		tableau[1] = tableau[3];
-		tableau[3] = tableau[4];
-		tableau[4] = tableau[5];
-		tableau[5] = "";
-		for(int j = 0;j <= tableau.length-1;j++){
-			System.out.print(tableau[j]+" ");
+public class App {
+	
+
+		public static String inverserChaine(String chaineSaisie){
+			String chaineInverser = "";
+			for(int i = chaineSaisie.length()-1; i >= 0;i--){
+				chaineInverser = chaineInverser + chaineSaisie.charAt(i);
+			}
+			return chaineInverser;
 		}
-	}
-	public static void main(String[] args) {
-		
-		String[] tableau = new String[6];
-		
-		tableau[0] = "H";
-		tableau[1] = "E";
-		tableau[2] = "L";
-		tableau[3] = "L";
-		tableau[4] = "O";
-		tableau[5] = "";
-		
-		for(int i = 0;i <= tableau.length-1;i++ ){
-			System.out.print(tableau[i]+" ");
-		}
-		
-		System.out.print("\n");
-		
-		inversion(tableau);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			String chaine;
+			String resultat;
+			System.out.println("Saisir une chaine de caractère");
+			chaine = sc.nextLine();
+			resultat = inverserChaine(chaine);
+			
+			System.out.println("La chaine inverser : "+ resultat);
+			
+			sc.close();
+			
 		
 		
 		
